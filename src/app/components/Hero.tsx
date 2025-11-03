@@ -34,7 +34,7 @@ const Hero = () => {
         </p>
 
         {/* ✅ Enroll Button navigates to /enrol */}
-        <Link href="/payments">
+        <Link href="/enrol">
           <button className="bg-orange-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-orange-600 transition">
             Enroll With Us
           </button>

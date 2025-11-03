@@ -88,12 +88,8 @@ export default function EnrolPage() {
         `Enrollment successful! A confirmation email has been sent to ${user.email}.`
       );
 
-      // ✅ Redirect to payment page with program, plan, and amount
-      router.push(
-        `/payment?program=${encodeURIComponent(formData.program)}&count=${
-          formData.peopleCount
-        }&plan=${formData.plan}&amount=${selectedAmount}`
-      );
+      
+    
     } catch (error) {
       console.error("❌ Error submitting enrollment:", error);
       alert("Something went wrong. Please try again.");
