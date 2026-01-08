@@ -35,7 +35,7 @@ export default function Staff() {
       },
     },
     {
-      name: "Naserian Njeri",
+      name: "Naserian shelby",
       role: "Mobile App Developer",
       image: "/images/staffs/naserian.jpeg",
       description:
@@ -73,14 +73,14 @@ export default function Staff() {
         Our Professionals
       </h1>
 
-      <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-12 md:grid-cols-4 lg:grid-cols-4">
         {staffMembers.map((staff, index) => (
           <div
             key={index}
             onClick={() => setSelectedStaff(staff)}
-            className="cursor-pointer bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-2 border border-gray-100"
+            className="cursor-pointer bg-white rounded-2xl shadow-xl hover:shadow-orange-500 transition-transform transform hover:-translate-y-2 border border-gray-100"
           >
-            <div className="relative w-full h-72">
+            <div className="relative w-full h-64">
               <Image
                 src={staff.image}
                 alt={staff.name}
@@ -116,7 +116,7 @@ export default function Staff() {
                   src={selectedStaff.image}
                   alt={selectedStaff.name}
                   fill
-                  className="object-cover rounded-full border-4 border-blue-500"
+                  className=" w-14 h-14 rounded-full mr-5 object-auto border-3 border-blue-300"
                 />
               </div>
 

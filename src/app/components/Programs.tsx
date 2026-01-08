@@ -134,7 +134,7 @@ export default function Programs() {
         {courses.map((course, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-2 border border-gray-100 cursor-pointer"
+            className="bg-white rounded-2xl shadow-xl hover:shadow-orange-500 transition-transform transform hover:-translate-y-2 border border-gray-100 cursor-pointer"
             onClick={() => setSelectedCourse(course)}
             whileHover={{ scale: 1.03 }}
           >

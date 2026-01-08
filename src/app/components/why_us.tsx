@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
     if (paused) return;
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
-    }, 9000);
+    }, 5000);
     return () => clearInterval(timer);
   }, [paused]);
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   FaCogs,
   FaEnvelope,
@@ -36,22 +37,24 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-gray-700">
             <li className="flex items-center gap-3 hover:text-blue-600 transition">
-              <FaHome className="text-blue-500" /> <a href="/">Home</a>
+              <FaHome className="text-blue-500" /> <a href="/#hero">Home</a>
             </li>
             <li className="flex items-center gap-3 hover:text-blue-600 transition">
               <FaCogs className="text-blue-500" />{" "}
-              <a href="/programs">Programs</a>
+              <a href="/#programs">Programs</a>
             </li>
             <li className="flex items-center gap-3 hover:text-blue-600 transition">
               <FaUserFriends className="text-blue-500" />{" "}
-              <a href="/partners">Partners</a>
+              <a href="/#partners">Partners</a>
             </li>
             <li className="flex items-center gap-3 hover:text-blue-600 transition">
-              <FaUsers className="text-blue-500" /> <a href="/staff">Staff</a>
+              <FaUsers className="text-blue-500" /> <a href="/#staff">Staff</a>
             </li>
             <li className="flex items-center gap-3 hover:text-blue-600 transition">
               <FaEnvelope className="text-blue-500" />{" "}
-              <a href="/contact">Contact</a>
+              <Link href="/#contact" className="hover:text-orange-600">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

@@ -4,7 +4,8 @@ import "./globals.css";
 
 export const metadata = {
   title: "CodingKraqs",
-  description: "Learn to CODE, build, and KRAQ the future!",
+  description:
+    "Learn to CODE, build, and KRAQ the future! with 10 years of coding experience in London staffs",
 };
 
 export default function RootLayout({

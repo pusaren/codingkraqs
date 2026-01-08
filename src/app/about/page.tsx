@@ -32,8 +32,8 @@ export default function AboutPage() {
             Empowering Future Innovators Through{" "}
             <span className="text-orange-500">Coding, Robotics & AI</span>
           </h1>
-          <p className="text-gray-600 text-lg">
-            📍 Established 10 Years Ago | United Kingdom
+          <p className="text-red-600 text-lg text-bold text-family-san sarif ">
+            Established 10 Years Ago | United Kingdom
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
             CodingKraqs is a leading innovation hub dedicated to empowering
@@ -79,7 +79,7 @@ export default function AboutPage() {
         >
           {/* Vision */}
           <motion.div
-            className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition"
+            className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-orange-500 transition"
             variants={fadeInUp}
           >
             <h3 className="text-2xl font-bold text-orange-500 mb-3">
@@ -91,10 +91,8 @@ export default function AboutPage() {
               innovators who change the world through technology.
             </p>
           </motion.div>
-
-          {/* Mission */}
           <motion.div
-            className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition"
+            className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-orange-500 transition"
             variants={fadeInUp}
           >
             <h3 className="text-2xl font-bold text-blue-700 mb-3">
@@ -116,10 +114,8 @@ export default function AboutPage() {
             </ul>
           </motion.div>
         </motion.section>
-
-        {/* Eye Care Initiative */}
         <motion.section
-          className="max-w-6xl mx-auto mb-16 bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition"
+          className="max-w-6xl mx-auto mb-16 bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-orange-500 transition"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
@@ -141,8 +137,6 @@ export default function AboutPage() {
             </li>
           </ul>
         </motion.section>
-
-        {/* Education Model */}
         <motion.section
           className="max-w-6xl mx-auto mb-16"
           initial="hidden"
@@ -150,7 +144,7 @@ export default function AboutPage() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
         >
-          <h3 className="text-2xl font-bold text-orange-500 mb-4">
+          <h3 className="text-2xl font-bold text-orange-500 mb-4 ">
             Our Education Model
           </h3>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -159,7 +153,7 @@ export default function AboutPage() {
             application. Each term concludes with hands-on projects that solve
             real problems.
           </p>
-          <div className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+          <div className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-orange-500 transition">
             <h4 className="text-xl font-semibold text-blue-700 mb-3">
               Curriculum Highlights
             </h4>
@@ -174,8 +168,6 @@ export default function AboutPage() {
             </p>
           </div>
         </motion.section>
-
-        {/* Call to Action */}
         <motion.div
           className="text-center mt-16"
           initial="hidden"

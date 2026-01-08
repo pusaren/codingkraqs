@@ -3,6 +3,14 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import {
+  FaCogs,
+  FaEnvelope,
+  FaHome,
+  FaUserFriends,
+  FaUsers,
+} from "react-icons/fa";
+import { FaNoteSticky } from "react-icons/fa6";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,21 +36,44 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8 text-black">
-          <Link href="/" className="hover:text-orange-600">
-            Home
-          </Link>
-          <Link href="/about" className="hover:text-blue-600">
-            About
-          </Link>
-          <Link href="/#programs" className="hover:text-blue-600">
-            Programs
-          </Link>
-          <Link href="/#staff" className="hover:text-blue-600">
-            Staff
-          </Link>
-          <Link href="/#contact" className="hover:text-orange-600">
-            Contact
-          </Link>
+          <li className="flex items-center gap-3 hover:text-blue-600 transition">
+            <FaHome className="text-blue-500" />{" "}
+            <Link href="/" className="hover:text-orange-600">
+              Home
+            </Link>
+          </li>
+          <li className="flex items-center gap-3 hover:text-blue-600 transition">
+            <FaNoteSticky className="text-blue-500" />{" "}
+            <Link href="/about" className="hover:text-orange-600">
+              About
+            </Link>
+          </li>
+
+          <li className="flex items-center gap-3 hover:text-blue-600 transition">
+            <FaCogs className="text-blue-500" />{" "}
+            <Link href="/#programs" className="hover:text-orange-600">
+              Programs
+            </Link>
+          </li>
+
+          <li className="flex items-center gap-3 hover:text-blue-600 transition">
+            <FaUsers className="text-blue-500" />{" "}
+            <Link href="/#staff" className="hover:text-orange-600">
+              Staff
+            </Link>
+          </li>
+          <li className="flex items-center gap-3 hover:text-blue-600 transition">
+            <FaUserFriends className="text-blue-500" />{" "}
+            <a href="/#partners" className="hover:text-orange-600">
+              Partners
+            </a>
+          </li>
+          <li className="flex items-center gap-3 hover:text-blue-600 transition">
+            <FaEnvelope className="text-blue-500" />{" "}
+            <Link href="/#contact" className="hover:text-orange-600">
+              Contact
+            </Link>
+          </li>
           <Link
             href="/enrol"
             className="bg-orange-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
@@ -90,6 +121,13 @@ export default function Navbar() {
             className="block hover:text-blue-600"
           >
             Our Staffs
+          </Link>
+          <Link
+            href="/#partners"
+            onClick={closeMenu}
+            className="block hover:text-blue-600"
+          >
+            Partners
           </Link>
           <Link
             href="/#contact"
